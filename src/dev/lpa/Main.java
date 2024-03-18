@@ -26,5 +26,15 @@ public class Main {
         // Two items: "Hello" and "hello"
         System.out.println("mySet = " + mySet);
         System.out.println("size: " + mySet.size());
+
+        for (String setValue : mySet){
+             System.out.println(setValue + ": ");
+             for (int i=0; i< hellos.size(); i++){
+                 if(setValue == hellos.get(i)){
+                     System.out.println(i + ", ");
+                 }
+             }
+             System.out.println(" ");
+        }
     }
 }
