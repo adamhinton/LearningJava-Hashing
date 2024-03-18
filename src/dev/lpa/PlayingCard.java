@@ -11,4 +11,9 @@ public class PlayingCard {
         this.face = face;
         this.internalHash = internalHash;
     }
+
+    @Override
+    public String toString() {
+        return face + " of " + suit;
+    }
 }
